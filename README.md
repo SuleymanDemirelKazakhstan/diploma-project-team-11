@@ -1,6 +1,9 @@
 # CSS 410 Research tools and methods
 ## Team members
-+ **Jet Lee** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
++ **Dias Muratbayev** (*180100012*)- Backend Developer (GitHub account: *Gunbooldre*)
++ **Miras Kemelkhan** (*180100013*) - Frontend Developer (GitHub account: *kemelkhan*)
++ **Farkhat Imanalinov** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
++ **Jacky Chan** (*180100013*) - Frontend Developer (GitHub account: *Merphiles*)
 + **Jacky Chan** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
 
 ## Project
