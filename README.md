@@ -1,55 +1,43 @@
-# CSS 410 Research tools and methods
-## Team members
-+ **Dias Muratbayev** (*180100012*)- Backend Developer (GitHub account: *Gunbooldre*)
-+ **Miras Kemelkhan** (*180100013*) - Frontend Developer (GitHub account: *kemelkhan*)
-+ **Farkhat Imanalinov** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
-+ **Jacky Chan** (*180100013*) - Frontend Developer (GitHub account: *Merphiles*)
-+ **Jacky Chan** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
+# NFT Marketplace
 
-## Project
-This project is yet-another clone of Instagram
+## Technology Stack & Tools
 
-## Alternatives / Market research
-| Research alternatives
+- Solidity (Writing Smart Contract)
+- Javascript (React & Testing)
+- [Ethers](https://docs.ethers.io/v5/) (Blockchain Interaction)
+- [Hardhat](https://hardhat.org/) (Development Framework)
+- [Ipfs](https://ipfs.io/) (Metadata storage)
+- [React routers](https://v5.reactrouter.com/) (Navigational components)
 
-## Goals
+## Requirements For Initial Setup
+- Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
+- Install [Hardhat](https://hardhat.org/)
 
-## Technologies
-In our project we use **Laravel**, **VueJS**
+## Setting Up
+### 1. Clone/Download the Repository
 
-## Pages / Activities 
-We will have following pages:
-- Latest posts of friends
-- Posts from location of user
-- Take a photo page
-- Personal page
-- Settings page
+### 2. Install Dependencies:
+```
+$ cd nft_marketplace
+$ npm install
+```
+### 3. Boot up local development blockchain
+```
+$ cd nft_marketplace
+$ npx hardhat node
+```
 
-## Goals
-* What is the purpose of this project?
-* What are the problems it will solve?
-* How will it streamline or improve the current process or facilitate a new process?
-* What is the product vision?
+### 4. Connect development blockchain accounts to Metamask
+- Copy private key of the addresses and import to Metamask
+- Connect your metamask to hardhat blockchain, network 127.0.0.1:8545.
+- If you have not added hardhat to the list of networks on your metamask, open up a browser, click the fox icon, then click the top center dropdown button that lists all the available networks then click add networks. A form should pop up. For the "Network Name" field enter "Hardhat". For the "New RPC URL" field enter "http://127.0.0.1:8545". For the chain ID enter "31337". Then click save.  
 
-## User Personas
-*Write description of user personas here*  
 
-## User stories
+### 5. Migrate Smart Contracts
+`npx hardhat run src/backend/scripts/deploy.js --network localhost`
 
-*Write your user stories here*
+### 6. Run Tests
+`$ npx hardhat test`
 
-## Sitemap, Page descriptions
-
-*Display sitemap here*
-
-## Non-Functional requirements
-*Write non-functional requirements*
-
-## Risks
-*What are the risks?*
-
-## Mockups, Wireframes
-*Put here images of your wireframes*
-
-## Future iterations
-*Write your future iterations*
+### 7. Launch Frontend
+`$ npm run start`
