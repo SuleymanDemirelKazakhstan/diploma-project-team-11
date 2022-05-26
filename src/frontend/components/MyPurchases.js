@@ -43,6 +43,7 @@ export default function MyPurchases({ marketplace, nft, account }) {
     </main>
   )
   return (
+      <div className='container'>
     <div className="flex justify-center">
       {purchases.length > 0 ?
         <div className="px-5 container">
@@ -63,5 +64,6 @@ export default function MyPurchases({ marketplace, nft, account }) {
           </main>
         )}
     </div>
+        </div>
   );
 }

@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .App-logo {
@@ -35,4 +35,54 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+  background-color: #3d2942;
+  color: #fff;
+  font-size: 14px !important;
+  padding: 20px;
+}
+.card__img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+.card--price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px !important;
+}
+.card--price:first-child {
+  color: #c6bfc8;
+}
+.card__button {
+  background-color: rgba(167, 177, 233, 0.1);
+  border-color: #fde8b3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card__button:hover {
+  background-color: unset;
+  border-color: #fde8b3;
+}
+.card__button:active {
+  background-color: unset;
+  border-color: #fde8b3;
+}
+
+.nav__btn {
+  border: 1px solid #2962f2;
+  border-radius: 0;
+  padding: 10px 15px;
+}
+.nav-link {
+  color: #000 !important;
+}
+.nav--link_active {
+  color: #61dafb !important;
 }
