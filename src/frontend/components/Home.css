@@ -1,0 +1,14 @@
+.home__btn_explore {
+    background-color: #A18984;
+    border-color: #A18984;
+    border-width: 1px;
+    padding: 15px 50px;
+    color: #fff;
+}
+.home__btn_create {
+    background-color: rgba(233, 215, 167, 0.1);
+    border-color: #3861FB;
+    border-width: 1px;
+    padding: 15px 50px;
+    color: #000;
+}
