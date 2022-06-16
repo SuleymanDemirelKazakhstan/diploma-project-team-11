@@ -38,9 +38,11 @@ export default function MyPurchases({ marketplace, nft, account }) {
     loadPurchasedItems()
   }, [])
   if (loading) return (
-    <main style={{ padding: "1rem 0" }}>
-      <h2>Loading...</h2>
-    </main>
+      <div className="container">
+        <main style={{ padding: "1rem 0" }}>
+          <h2>Loading...</h2>
+        </main>
+      </div>
   )
   return (
       <div className='container'>

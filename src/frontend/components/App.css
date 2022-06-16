@@ -65,6 +65,7 @@
   border-color: #fde8b3;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 16px;
 }
 .card__button:hover {
   background-color: unset;

@@ -12,6 +12,8 @@ const Create = ({ marketplace, nft }) => {
   const uploadToIPFS = async (event) => {
     event.preventDefault();
     const file = event.target.files[0];
+    console.log(file)
+    // console.log(file)
     if (typeof file !== 'undefined') {
       try {
         const result = await client.add(file);
@@ -23,7 +25,11 @@ const Create = ({ marketplace, nft }) => {
     }
   };
   const createNFT = async () => {
-    if (!image || !price || !name || !description) return;
+    console.log(image, price, name, description)
+    if (!image || !price || !name || !description) {
+      console.log('not valid data')
+      return;
+    }
     try {
       const result = await client.add(JSON.stringify({ image, price, name, description }));
       mintThenList(result);
